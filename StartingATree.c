@@ -1,4 +1,5 @@
 //creating a tree 
+//everything is O(log(n))! 
   struct TreeNode {
     int item;         // The data in this node.
     TreeNode *left;   // Pointer to the left .
