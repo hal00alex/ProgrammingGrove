@@ -1,0 +1,30 @@
+Question: What kind of tree would you be? 
+Answer: A binary tree since I am so organized 
+
+Question: How would you test a tree or any datastructure? 
+Answer: First, I will see how it handles nulls. Then, I will see how it handles different datatypes. i.e if someone passes pointers instead of int 
+  Thirdly, I would look at the output/printing functions as different datasctuctures require different scopes and different languages require specail printing syntax. 
+  Next, I would create an instance of the object, fill it with test values to practice all the subfunctions if applicable. 
+  Lastly, I will test for overflow and destructoion if datastructure in lower level langauge. 
+  
+
+Question: How would sell a binary tree to a customer?
+Answer: Firstly, I would make sure it is a sorted binary tree as a the tree would have extrmely fast look up times. 
+  I would focus on the fact that the binary tree has O(log(n)) time for many functions as time is money for banking software. 
+  Then, I would give a demo or draw out what the binary tree looks like behind the scenes since clients like seeing products. 
+  
+Question: How would you reverse a linked list? 
+Answer: Iterate trough the linked list. In loop, change next to prev, prev to current and current to next.
+
+//need the temp varaible! 
+Node reversedPart = null;
+Node current = start;
+while (current != null) {
+    //need another temp varaible 
+    Node next = current.next;
+    current.next = reversedPart;
+    reversedPart = current;
+    current = next;
+}
+start = reversedPart
+
